@@ -17,7 +17,7 @@ namespace BankSystem {
 
 
 
-
+        void withdraw(int amount);
 
 
         static int getObjectCount();

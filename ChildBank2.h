@@ -8,6 +8,9 @@ namespace BankSystem {
         ChildBank2(string n, int b, string type);
         void showInfo() override;
         void printAccountType();
+        void upgradeAccount();
+
+
         ~ChildBank2();
     };
 }

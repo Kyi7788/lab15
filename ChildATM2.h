@@ -8,6 +8,10 @@ namespace BankSystem {
         ChildATM2(string loc, bool touch);
         void showInfo() override;
         void showFeature();
+
+
+        
+
         ~ChildATM2();
     };
 }

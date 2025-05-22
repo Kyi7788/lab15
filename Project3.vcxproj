@@ -139,9 +139,12 @@
     <ClCompile Include="StatManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AccountLogger.h" />
+    <ClInclude Include="AccountNotifier.h" />
     <ClInclude Include="BankA.h" />
     <ClInclude Include="BankAccount.h" />
     <ClInclude Include="BankB.h" />
+    <ClInclude Include="BankLogger.h" />
     <ClInclude Include="BankNotice.h" />
     <ClInclude Include="ChildATM1.h" />
     <ClInclude Include="ChildATM2.h" />
@@ -150,7 +153,9 @@
     <ClInclude Include="Nagłówek.h" />
     <ClInclude Include="ATM.h" />
     <ClInclude Include="getHigherStat.h" />
+    <ClInclude Include="Observer.h" />
     <ClInclude Include="StatManager.h" />
+    <ClInclude Include="Subject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -41,5 +41,42 @@ int main() {
     accA.showInfo();
     accB.showInfo();
 
+
+
+
+    try {
+        BankAccount* acc1 = new ChildBank1("Alice", -2000, 98765);  // Will throw
+    }
+    catch (const invalid_argument& e) {
+        cout << "Error creating account: " << e.what() << endl;
+    }
+
+
+    try {
+        ChildBank1 acc("Alice", 2000, 12345);
+        acc.withdraw(50);  // Too low
+    }
+    catch (const out_of_range& e) {
+        cout << "Withdrawal error: " << e.what() << endl;
+    }
+
+    try {
+        ChildBank2 acc2("Bob", 3000, "Savings");
+        acc2.upgradeAccount();  // Will throw
+    }
+    catch (const logic_error& e) {
+        cout << "Upgrade error: " << e.what() << endl;
+    }
+
+
+
+
+
+
+
+
+
+
+
     return 0;
 }

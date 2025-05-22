@@ -2,9 +2,12 @@
 namespace BankSystem {
 
     ChildBank1::ChildBank1(string n, int b, int accNum) : BankAccount(n, b) {
+        if (b < 0)
+            throw invalid_argument("Balance cannot be negative.");
         accountNumber = accNum;
-        objectCount++;   // Increment on object creation
+        objectCount++;
     }
+
 
     void ChildBank1::showInfo() {
         cout << name << " has account number " << accountNumber << " with balance " << balance << endl;
@@ -58,4 +61,11 @@ namespace BankSystem {
 
 
     }
+    void ChildBank1::withdraw(int amount) {
+        if (amount < 100)
+            throw out_of_range("Withdrawal amount too low. Minimum is 100.");
+        balance -= amount;
+    }
+
+
 }

@@ -1,7 +1,4 @@
-﻿  ATM.cpp
-  BankAccount.cpp
-  ChildATM1.cpp
-  ChildATM2.cpp
+﻿  BankAccount.cpp
   ChildBank1.cpp
   ChildBank2.cpp
   main.cpp

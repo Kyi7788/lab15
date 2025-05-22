@@ -15,4 +15,12 @@ namespace BankSystem {
     ChildBank2::~ChildBank2() {
         cout << "ChildBank2 Destructor\n";
     }
+
+    void ChildBank2::upgradeAccount() {
+        if (balance < 5000)
+            throw logic_error("Cannot upgrade: balance below required threshold.");
+        accountType = "Premium";
+    }
+
+
 }

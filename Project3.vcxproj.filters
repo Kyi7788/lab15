@@ -54,6 +54,21 @@
     <ClInclude Include="BankB.h">
       <Filter>Pliki źródłowe\NewFilter1</Filter>
     </ClInclude>
+    <ClInclude Include="Observer.h">
+      <Filter>Pliki źródłowe\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="BankLogger.h">
+      <Filter>Pliki źródłowe\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="Subject.h">
+      <Filter>Pliki źródłowe\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountLogger.h">
+      <Filter>Pliki źródłowe\NewFilter1</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountNotifier.h">
+      <Filter>Pliki źródłowe\NewFilter1</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BankAccount.cpp">
